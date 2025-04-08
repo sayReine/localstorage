@@ -1,0 +1,104 @@
+*{
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #fff0f5;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(255, 192, 203, 0.3); 
+}
+
+h1 {
+  text-align: center;
+  color: #ff69b4;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input, textarea, button {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ffa07a; 
+  font-size: 16px;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #ff69b4;
+  box-shadow: 0 0 5px rgba(255, 105, 180, 0.5); 
+}
+
+button {
+  background-color: #ff7f50; 
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+button:hover {
+  background-color: #ff6347; 
+}
+
+#clear-all {
+  background-color: #ff1493; 
+  margin-bottom: 20px;
+}
+
+#clear-all:hover {
+  background-color: #c71585; 
+}
+
+.task-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.task-card {
+  width: calc(50% - 20px);
+  padding: 15px;
+  border-radius: 10px;
+  color: #333;
+  background-color: #fff5f5; 
+  box-shadow: 0 4px 10px rgba(255, 192, 203, 0.4);
+  transition: transform 0.2s ease;
+}
+
+.task-card:hover {
+  transform: scale(1.02);
+}
+
+.task-card h3 {
+  margin-top: 0;
+  color: #ff69b4;
+}
+
+.task-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.task-actions button {
+  background-color: #ffa07a;
+}
+
+.task-actions button:hover {
+  background-color: #ff4500;
+  color: #fff;
+}
